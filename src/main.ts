@@ -26,3 +26,15 @@ type Dipendente = {
   readonly eMailAziendale: string;
   contratto: "Determinato" | "Indeterminato" | "Freelance";
 };
+
+type Developer = Dipendente & {
+  livelloEsperienza: "Junior" | "Mid" | "Senior";
+  linguaggi?: string[];
+  certificazioni: string[];
+};
+
+type ProjectManager = Dipendente & {
+  teamSize: number | null;
+  budgetGestito?: number;
+  stakeholderPrincipali: string[];
+};
