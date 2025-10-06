@@ -16,3 +16,13 @@ if (typeof valore === "string") {
 } else {
   console.log("Tipo non supportato");
 }
+
+type Dipendente = {
+  nome: string;
+  cognome: string;
+  annoNascita: number;
+  sesso: "M" | "F";
+  anniDiServizio: number[];
+  readonly eMailAziendale: string;
+  contratto: "Determinato" | "Indeterminato" | "Freelance";
+};
